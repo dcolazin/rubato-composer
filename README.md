@@ -27,7 +27,7 @@ Clone the project, move to the folder, then install the dependencies to the loca
 $ sh install_libraries.sh
 $ maven package
 ```
-which generates tar.gz files with latest `src`, `bin`, and `api` annotated with the current date.
+which generates the latest `jar` file in the target folder.
 
 
 ## List of known bugs
