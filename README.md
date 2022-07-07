@@ -22,12 +22,15 @@ Alternatively, clone and build the src as subsequently described.
 
 ## Build
 
-Clone the project, move to the folder, then run
+Clone the project, move to the folder, then install the dependencies to the local maven repository and run maven
 ```bash
-$ ant
+$ sh install_libraries.sh
+$ maven package
 ```
 which generates tar.gz files with latest `src`, `bin`, and `api` annotated with the current date.
 
-## Notes
 
-Make sure to read the BUGS file for any known issues.
+## List of known bugs
+
+* **Rubato Composer GUI:** Sometimes dialog windows may become unresponsive to keyboard input. A slight resize of the window will normally make it responsive again. This seems happen on JDK 1.6.0.
+* **Rubato Composer GUI, ScorePlayRubette:** There is a delay between the current position indicator and the playing.

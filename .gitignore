@@ -4,3 +4,4 @@ javadoc
 rubato-api-*
 rubato-bin-*
 rubato-src-*
+target/*

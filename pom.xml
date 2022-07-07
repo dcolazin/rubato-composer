@@ -1,0 +1,168 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.rubato</groupId>
+	<artifactId>rubato</artifactId>
+	<version>0.1.0-MAVEN</version>
+	<packaging>jar</packaging>
+	<dependencies>
+		    <dependency>
+		      <groupId>org.apache.maven.plugins</groupId>
+		      <artifactId>maven-resources-plugin</artifactId>
+		      <version>3.2.0</version>
+		      <type>maven-plugin</type>
+		    </dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>collections-generic</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>commons-math3</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>core</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>GlulogicMT</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jportaudio</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jsyn</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jung-algorithms</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jung-api</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jung-graph-impl</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>jung-visualization</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>junit</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>LeapJava</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>mt4j</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.rubato.jars</groupId>
+		    <artifactId>xercesImpl</artifactId>
+			<version>0.1.0-MAVEN</version>
+		</dependency>
+	</dependencies>
+	<dependencyManagement><!-- TODO --></dependencyManagement>
+	<modules><!-- TODO --></modules>
+	<properties>
+	    <maven.compiler.source>1.6</maven.compiler.source>
+	    <maven.compiler.target>1.6</maven.compiler.target>
+	</properties>
+
+
+	<!-- Build Settings -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+						    <addClasspath>true</addClasspath>
+						    <mainClass>org.rubato.composer.Composer</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+				    <encoding>${project.encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.4</version>
+				<executions>
+				  <execution>
+				    <phase>package</phase>
+				    <goals>
+				      <goal>shade</goal>
+				    </goals>
+<configuration>
+                        <filters>
+                            <filter>
+                                <artifact>*:*</artifact>
+                                <excludes>
+                                    <exclude>META-INF/*.SF</exclude>
+                                    <exclude>META-INF/*.DSA</exclude>
+                                    <exclude>META-INF/*.RSA</exclude>
+                                </excludes>
+                            </filter>
+                        </filters>
+</configuration>
+				  </execution>
+				</executions>
+		      </plugin>
+		</plugins>	
+	</build>
+	<reporting><!-- TODO --></reporting>
+
+	<!-- More Project Information -->
+	<name>Rubato Composer</name>
+	<description>Rubato Composer is a music software based on the concepts and models of mathematical music theory.</description>
+	<url>https://github.com/rubato-composer/rubato-composer</url>
+	<inceptionYear><!-- TODO --></inceptionYear>
+	<licenses><!-- TODO --></licenses>
+	<organization><!-- TODO --></organization>
+	<developers><!-- TODO --></developers>
+	<contributors><!-- TODO --></contributors>
+
+	<!-- Environment Settings -->
+	<issueManagement><!-- TODO --></issueManagement>
+	<ciManagement><!-- TODO --></ciManagement>
+	<mailingLists><!-- TODO --></mailingLists>
+	<scm><!-- TODO --></scm>
+	<prerequisites><!-- TODO --></prerequisites>
+	<repositories><!-- TODO --></repositories>
+	<pluginRepositories><!-- TODO --></pluginRepositories>
+	<distributionManagement><!-- TODO --></distributionManagement>
+	<profiles><!-- TODO --></profiles>
+</project>
