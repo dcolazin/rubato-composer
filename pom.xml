@@ -8,10 +8,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 	<packaging>jar</packaging>
 	<dependencies>
 		    <dependency>
-		      <groupId>org.apache.maven.plugins</groupId>
-		      <artifactId>maven-resources-plugin</artifactId>
-		      <version>3.2.0</version>
-		      <type>maven-plugin</type>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.2.0</version>
+				<type>maven-plugin</type>
+				<scope>provided</scope>
 		    </dependency>
 		<dependency>
 		    <groupId>org.rubato.jars</groupId>
@@ -67,6 +68,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 		    <groupId>org.rubato.jars</groupId>
 		    <artifactId>junit</artifactId>
 			<version>0.1.0-MAVEN</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 		    <groupId>org.rubato.jars</groupId>
@@ -126,7 +128,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 				    <goals>
 				      <goal>shade</goal>
 				    </goals>
-<configuration>
+					<configuration>
                         <filters>
                             <filter>
                                 <artifact>*:*</artifact>
@@ -137,7 +139,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
                                 </excludes>
                             </filter>
                         </filters>
-</configuration>
+					</configuration>
 				  </execution>
 				</executions>
 		      </plugin>

@@ -59,11 +59,26 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-resources-plugin</artifactId>
+      <version>3.2.0</version>
+      <type>maven-plugin</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.rubato.jars</groupId>
+      <artifactId>junit</artifactId>
+      <version>0.1.0-MAVEN</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   <reporting />
   <dependencyManagement />
   <distributionManagement />
   <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.6</maven.compiler.source>
   </properties>
 </project>
