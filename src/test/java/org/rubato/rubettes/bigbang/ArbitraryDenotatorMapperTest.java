@@ -21,7 +21,7 @@ public class ArbitraryDenotatorMapperTest  extends TestCase {
 	private TestObjects objects;
 	private ModuleMorphism translation;
 	
-	public void setUp() {
+	protected void setUp() throws Exception {
 		this.objects = new TestObjects();
 		RMatrix identity = new RMatrix(new double[][]{{1,0},{0,1}});
 		this.translation = RFreeAffineMorphism.make(identity, new double[]{-1,-2});
