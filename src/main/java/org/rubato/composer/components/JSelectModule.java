@@ -30,6 +30,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.util.TextUtils;
 
 /**

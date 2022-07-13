@@ -39,6 +39,7 @@ import org.rubato.logeo.DenoFactory;
 import org.rubato.math.arith.Complex;
 import org.rubato.math.arith.Rational;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.module.morphism.MappingException;
 import org.rubato.math.module.morphism.ModuleMorphism;
 import org.rubato.math.yoneda.*;

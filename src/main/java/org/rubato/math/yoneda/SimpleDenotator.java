@@ -34,6 +34,7 @@ import org.rubato.math.arith.Complex;
 import org.rubato.math.arith.Rational;
 import org.rubato.math.arith.ZString;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.module.morphism.MappingException;
 import org.rubato.math.module.morphism.ModuleMorphism;
 import org.rubato.xml.XMLReader;

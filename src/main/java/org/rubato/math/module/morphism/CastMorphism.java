@@ -27,6 +27,7 @@ import java.util.HashMap;
 
 import org.rubato.math.arith.Rational;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.util.Pair;
 import org.rubato.xml.XMLInputOutput;
 import org.rubato.xml.XMLReader;

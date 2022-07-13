@@ -11,6 +11,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 
 public abstract class JElementSlider extends JPanel {
 

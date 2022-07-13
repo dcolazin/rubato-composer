@@ -31,6 +31,7 @@ import javax.swing.event.CaretListener;
 
 import org.rubato.composer.preferences.UserPreferences;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 
 public class JSimpleNumberEntry
         extends JSimpleEntry

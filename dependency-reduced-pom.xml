@@ -15,6 +15,10 @@
   <build>
     <plugins>
       <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.4.0</version>
+      </plugin>
+      <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.4</version>
         <configuration>
@@ -79,6 +83,7 @@
   <distributionManagement />
   <properties>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <project.encoding>utf-8</project.encoding>
     <maven.compiler.source>1.6</maven.compiler.source>
   </properties>
 </project>

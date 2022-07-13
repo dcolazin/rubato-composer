@@ -22,6 +22,7 @@ package org.rubato.math.yoneda;
 import java.util.*;
 
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.util.Pair;
 
 /**

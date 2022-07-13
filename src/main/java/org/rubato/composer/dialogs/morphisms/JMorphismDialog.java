@@ -40,6 +40,7 @@ import org.rubato.composer.components.JModuleEntry;
 import org.rubato.composer.plugin.ModuleMorphismPlugin;
 import org.rubato.composer.plugin.PluginManager;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.module.morphism.*;
 
 /**

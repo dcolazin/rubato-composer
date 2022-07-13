@@ -37,6 +37,7 @@ import org.rubato.composer.icons.Icons;
 import org.rubato.composer.view2d.*;
 import org.rubato.composer.view2d.Point;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.yoneda.Denotator;
 import org.rubato.math.yoneda.Form;
 import org.rubato.util.DoubleConverter;

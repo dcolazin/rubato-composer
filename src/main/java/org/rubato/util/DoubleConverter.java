@@ -21,6 +21,7 @@ package org.rubato.util;
 
 import org.rubato.math.arith.Rational;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 
 
 /**

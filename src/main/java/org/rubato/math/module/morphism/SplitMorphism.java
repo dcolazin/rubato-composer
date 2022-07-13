@@ -30,6 +30,7 @@ import org.rubato.math.arith.Complex;
 import org.rubato.math.arith.Rational;
 import org.rubato.math.matrix.*;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.xml.XMLInputOutput;
 import org.rubato.xml.XMLReader;
 import org.rubato.xml.XMLWriter;

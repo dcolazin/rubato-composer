@@ -13,6 +13,7 @@ import org.rubato.base.Repository;
 import org.rubato.math.arith.Complex;
 import org.rubato.math.arith.Rational;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.yoneda.*;
 
 @SuppressWarnings("all")

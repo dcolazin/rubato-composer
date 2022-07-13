@@ -34,6 +34,7 @@ import org.rubato.rubettes.denotex.DenotexReader;
 import org.rubato.scheme.*;
 import org.rubato.xml.XMLReader;
 import org.rubato.xml.XMLWriter;
+import org.rubato.math.module.Module;
 
 /**
  * A repository of forms and denotators, retrievable by their names.

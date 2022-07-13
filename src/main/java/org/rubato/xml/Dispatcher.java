@@ -25,6 +25,7 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.module.morphism.*;
 import org.rubato.math.yoneda.ConstantModuleMorphismMap;
 import org.rubato.math.yoneda.ModuleMorphismMap;

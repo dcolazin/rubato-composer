@@ -25,6 +25,7 @@ import java.util.IdentityHashMap;
 
 import org.rubato.base.RubatoException;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.module.morphism.CompositionException;
 import org.rubato.math.module.morphism.ConstantMorphism;
 import org.rubato.math.module.morphism.ModuleMorphism;

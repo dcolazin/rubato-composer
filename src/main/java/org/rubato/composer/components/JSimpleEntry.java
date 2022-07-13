@@ -26,6 +26,7 @@ import javax.swing.JPanel;
 import javax.swing.event.EventListenerList;
 
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 
 public abstract class JSimpleEntry extends JPanel {
 
