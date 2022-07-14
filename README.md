@@ -25,11 +25,13 @@ Alternatively, clone and build the src as subsequently described.
 Clone the project, move to the folder, then install the dependencies to the local maven repository and run maven
 ```bash
 $ sh install_libraries.sh
-$ maven package
+$ mvn package
 ```
-which generates the latest `jar` file in the target folder.
+which generates the latest `jar` file in the target folder. Moreover, it is possible to generate the javadocs with the command
 
-
+```bash
+$ mvn javadoc:javadoc
+```
 ## List of known bugs
 
 * **Rubato Composer GUI:** Sometimes dialog windows may become unresponsive to keyboard input. A slight resize of the window will normally make it responsive again. This seems happen on JDK 1.6.0.

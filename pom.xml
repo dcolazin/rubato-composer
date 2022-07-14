@@ -155,26 +155,62 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 		      </plugin>
 		</plugins>	
 	</build>
-	<reporting><!-- TODO --></reporting>
 
 	<!-- More Project Information -->
 	<name>Rubato Composer</name>
 	<description>Rubato Composer is a music software based on the concepts and models of mathematical music theory.</description>
 	<url>https://github.com/rubato-composer/rubato-composer</url>
-	<inceptionYear><!-- TODO --></inceptionYear>
-	<licenses><!-- TODO --></licenses>
-	<organization><!-- TODO --></organization>
-	<developers><!-- TODO --></developers>
-	<contributors><!-- TODO --></contributors>
+	<inceptionYear>1992</inceptionYear>
+	<licenses>
+		<license>
+			<name>GNU GPL2</name>
+			<url>https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>Milmeister</id>
+			<name>Gérard Milmeister</name>
+			<email>milmei@ifi.unizh.ch</email>
+			<roles>
+				<role>main developer</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>Thalmann</id>
+			<name>Florian Thalmann</name>
+			<roles>
+				<role>contributing developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>Müller</id>
+			<name>Stefan Müller</name>
+			<roles>
+				<role>contributing developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>Göller</id>
+			<name>Stefan Göller</name>
+			<roles>
+				<role>contributing developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Davide Colazingari</name>
+			<roles>
+				<role>mantainer</role>
+			</roles>
+			<properties>
+				<gtalk>dcolazin@gmail.com</gtalk>
+			</properties>
+		</contributor>
+	</contributors>
 
 	<!-- Environment Settings -->
-	<issueManagement><!-- TODO --></issueManagement>
-	<ciManagement><!-- TODO --></ciManagement>
-	<mailingLists><!-- TODO --></mailingLists>
-	<scm><!-- TODO --></scm>
-	<prerequisites><!-- TODO --></prerequisites>
-	<repositories><!-- TODO --></repositories>
-	<pluginRepositories><!-- TODO --></pluginRepositories>
-	<distributionManagement><!-- TODO --></distributionManagement>
-	<profiles><!-- TODO --></profiles>
 </project>

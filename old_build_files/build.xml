@@ -1,4 +1,4 @@
-<project name="Rubato" default="dist-all" basedir=".">
+<project name="Rubato" default="dist-all" basedir="..">
 
   <target name="init">
     <tstamp/>
@@ -14,20 +14,20 @@
     <ant antfile="build.xml" dir="java" target="clean"/>
     <delete dir="export"/>
     <delete>
-      <fileset dir="." includes="*.tar.gz"/>
+      <fileset dir=".." includes="*.tar.gz"/>
     </delete>
   </target>
 
   <target name="doc-clean"
           description="Remove generated documentation">
-    <exec dir="docs" executable="make">
+    <exec dir="../docs" executable="make">
       <arg value="clean"/>
     </exec>    
   </target>
 
   <target name="doc"
           description="Generate documentation">
-    <exec dir="docs" executable="make">
+    <exec dir="../docs" executable="make">
       <arg value="manual.pdf"/>
     </exec>
   </target>
@@ -44,7 +44,7 @@
 
   <target name="dist-src" depends="init"
           description="Create source distribution">
-    <exec dir="." executable="git">
+    <exec dir=".." executable="git">
       <arg value="archive"/>
       <arg value="-o"/>
       <arg value="rubato-src-${DSTAMP}.tar"/>
@@ -75,14 +75,14 @@
                   prefix="rubato-bin-${DSTAMP}">
         <include name="rubato.jar"/>
       </tarfileset>
-      <tarfileset dir="."
+      <tarfileset dir=".."
                   prefix="rubato-bin-${DSTAMP}">
         <include name="COPYING"/>
         <include name="AUTHORS"/>
         <include name="README"/>
         <include name="BUGS"/>
       </tarfileset>
-      <tarfileset dir="docs"
+      <tarfileset dir="../docs"
                   prefix="rubato-bin-${DSTAMP}/doc">
         <include name="manual.pdf"/>
       </tarfileset>
