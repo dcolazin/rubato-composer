@@ -27,6 +27,7 @@ import java.util.List;
 import org.rubato.base.Repository;
 import org.rubato.logeo.DenoFactory;
 import org.rubato.math.module.*;
+import org.rubato.math.module.Module;
 import org.rubato.math.yoneda.*;
 
 
